@@ -6,27 +6,23 @@ from rtn_book import return_books
 
 def library():
     while True:
-        print("\n1.Add Books")
+        print("1.Add Books")
         print("2.Show Books")
         print("3.Issue Books")
         print("4.Return Books")
         print("5.Exit")
 
-        try:
-            choice = int(input("Enter your choice: "))
-        except:
-            print("Invalid input")
-            continue
+        choice = input("Enter your choice: ")
 
-        if choice == 1:
+        if choice == "1":
             add_books()
-        elif choice == 2:
+        elif choice == "2":
             show_books()
-        elif choice == 3:
+        elif choice == "3":
             issue_books()
-        elif choice == 4:
+        elif choice == "4":
             return_books()
-        elif choice == 5:
+        elif choice == "5":
             print("Thank You")
             break
         else:

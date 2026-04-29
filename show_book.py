@@ -6,13 +6,3 @@ def show_books():
         print("Books available")
         for b in books:
             print(b)
-
-
-
-
-
-
-
-
-
-
